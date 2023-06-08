@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+}
+.members-profile {
+  width: 30%;
+  height: max-content;
+  padding: 20px;
+  border-radius: 30px;
+  align-self: center;
+  box-shadow: 1px 0px 20px 9px #80808038;
+}
+.dashboard {
+  box-shadow: 1px 0px 20px 9px #80808038;
+  height: max-content;
+  padding: 40px;
+  border-radius: 40px;
+}
+.next {
+  margin-top: 30px;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  html {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .members-profile {
+    margin-top: 30px;
+    width: 100%;
+    height: max-content;
+    gap: 10px;
+  }
+  .dashboard {
+    margin-bottom: 130px;
+    font-size: 0.8rem;
+    margin-left: 40px;
+    padding: 0;
+  }
+}
+@media (max-width: 380px) {
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: unset;
+  }
+  .members-profile {
+    margin-top: 30px;
+
+    height: max-content;
+    gap: 10px;
+  }
+  .dashboard {
+    margin-bottom: 130px;
+    font-size: 0.7rem;
+    background-color: none;
+    padding: 0;
+    width: fit-content;
+    margin-left: 0;
+  }
+
+  .btn {
+    padding: 0;
+    font-size: 0.5rem;
+  }
+  .table {
+    border-collapse: collapse;
+  }
+}
