@@ -19,6 +19,20 @@ body {
   border-radius: 30px;
   align-self: center;
   box-shadow: 1px 0px 20px 9px #80808038;
+
+}
+.member-profile-logo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.member-profile-logo img{
+width: 100px;
+  border-radius: 50%;
+  box-shadow: 1px 0px 20px 9px #80808038;
+  align-self: center;
 }
 .dashboard {
   box-shadow: 1px 0px 20px 9px #80808038;
@@ -59,10 +73,12 @@ body {
   }
   .members-profile {
     margin-top: 30px;
-
+    width: max-content;
     height: max-content;
+    font-size: .7rem;
+    margin-left: 100px;
     gap: 10px;
-  }
+}
   .dashboard {
     margin-bottom: 130px;
     font-size: 0.7rem;
